@@ -95,8 +95,13 @@ public class ArregloAlumnos {
         return result;
     }
     
-    public void incrementartamañoarreglo(){
-     
+    public void incrementarTamañoArreglo(){
+             Alumno aux[] = new Alumno[this.indice+1];
+             
+             for (int i = 0; i < this.indice; i++) {
+                  aux[i] = AlumnoA[i];
+        }
+             AlumnoA = aux;
     }
     
     @Override
